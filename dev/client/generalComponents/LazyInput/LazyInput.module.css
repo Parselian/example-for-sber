@@ -1,0 +1,17 @@
+.input-wrap {
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 48%;
+    padding: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+.input-wrap input {
+    width: 100%;
+
+}
+.label {
+    display: block;
+}

@@ -1,0 +1,110 @@
+.transactions {
+    display: grid;
+    grid-template-areas: 'settings table';
+    grid-template-columns: 300px 1fr;
+    grid-gap: 30px;
+}
+
+.settings {
+    grid-area: settings;
+}
+
+.settings__main {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .settings__additional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.settings__submit {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*--------- TRANSACTIONS TABLE ------------*/
+
+
+.table {
+    max-width: 1400px;
+    grid-area: table;
+    max-height: 650px;
+    padding: 20px 40px 40px 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+    overflow: hidden;
+}
+
+.table__head,.table__row  {
+    grid-gap: 20px;
+    grid-template-columns: 20px repeat(7, 1fr);
+    padding-bottom: 10px;
+    display: grid;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table__row {
+    margin-bottom: 10px;
+    padding: 15px;
+    display: grid;
+    grid-gap: 60px;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.table__body {
+    overflow-y: auto;
+    max-height: 580px;
+}
+
+.table__cell {
+    text-align: center;
+}
+
+.table__row {
+    position: relative;
+}
+.table__row:hover .table__row-del, .table__row:hover .table__row-comment {
+    visibility: visible;
+}
+.table__row-del, .table__row-comment {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fdafaf;
+    border: none;
+    visibility: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.table__row-comment {
+    left: 50%;
+    right: 0;
+    background: lightskyblue;
+}
+.table__head .table__cell:first-child, .table__body .table__cell:first-child {
+    /*padding-left: 10px;*/
+    text-align: left;
+}
+
+.table__head .table__cell:last-child, .table__body .table__cell:last-child {
+    text-align: right;
+}

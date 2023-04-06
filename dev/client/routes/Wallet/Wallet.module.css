@@ -1,0 +1,39 @@
+.wallet {
+    display: flex;
+}
+
+.wallet__income {
+    margin-right: 50px;
+    padding: 15px;
+    background-color: #F6F6F6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wallet__income-block {
+    padding: 6px;
+    background-color: #E1E1E1;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.wallet__income-block:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.wallet__income-block label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.wallet__income-block input, .wallet__income-block select {
+    padding: 3px 10px;
+    width: 80%;
+    font-size: 14px;
+    border: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
